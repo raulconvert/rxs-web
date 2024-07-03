@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo Silvia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1 class="title">RxS</h1>
+    <h3 class="subtitle">Fotos de BISCUITS</h3>
+    
+    <section class="seccion_fotos">
+        <div class="caja_fotos">
+            <img class="foto" src="./imagenes/IMG_5850.jpg" alt="Villajoyosa" onclick="openModal(this)">
+            <h3 class="texto">Ubicación: Villajoyosa</h3>
+            <h3 class="texto">Fecha</h3>
+        </div>
+    </section>
+    
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
