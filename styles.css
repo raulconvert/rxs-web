@@ -24,17 +24,28 @@ body {
 
 .seccion_fotos {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .caja_fotos {
     display: flex;
     flex-direction: column;
     width: 350px;
+    background: #DFF1FF;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 20px;
 }
 
 .foto {
     width: 300px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 /* Modal styling */
@@ -85,4 +96,23 @@ body {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+}
+
+
+@media (max-width: 650px) {
+    .caja_fotos {
+        width: 100%;
+        margin: 0 15px;
+    }
+
+    .foto {
+        width: 90%;
+    }
+    
+    .modal-content {
+        width: 100%;
+    }
+    .modal {
+        padding-top: 150px;
+    }
 }
